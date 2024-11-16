@@ -11,7 +11,7 @@ const jura = Jura({
 });
 
 const title = "Logo-creator.io – Generate a logo";
-const description = "Generate a logo for your company";
+const description = "Generate a professional logo for your company in seconds";
 const url = "https://www.logo-creator.io/";
 const ogimage = "https://www.logo-creator.io/og-image.png";
 const sitename = "logo-creator.io";
@@ -47,15 +47,13 @@ export default function RootLayout({
 }>) {
   return (
     <ClerkProvider>
-      <html lang="en" className="h-full">
+      <html lang="en" className={`h-full ${jura.variable}`}>
         <head>
           <PlausibleProvider domain="logo-creator.io" />
           <link rel="icon" href="/favicon.ico" sizes="any" />
-          <meta name="color-scheme" content="dark" />
+          <meta name="theme-color" content="#111827" />
         </head>
-        <body
-          className={`${jura.variable} dark min-h-full bg-[#343434] font-jura antialiased`}
-        >
+        <body className="min-h-full bg-gray-900 font-jura text-white antialiased">
           {children}
           <Toaster />
         </body>
