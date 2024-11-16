@@ -74,11 +74,7 @@ export default function Page() {
 
   const { isSignedIn, isLoaded, user } = useUser();
 
-  const handleAPIKeyChange = (e: React.ChangeEvent<HTMLInputElement>) => {
-    const newValue = e.target.value;
-    setUserAPIKey(newValue);
-    localStorage.setItem("userAPIKey", newValue);
-  };
+  
 
   async function generateLogo() {
     if (!isSignedIn) {
