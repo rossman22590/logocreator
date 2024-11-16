@@ -1,4 +1,4 @@
-<a href="https://www.aigenlogo.io">
+<a href="https://www.aigenlogo.io"> 
   <img alt="AI Logo Generator" src="./public/og-image.png">
   <h1 align="center">AI Logo Generator</h1>
 </a>
