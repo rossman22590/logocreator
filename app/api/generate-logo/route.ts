@@ -70,7 +70,7 @@ export async function POST(req: Request) {
 
     if (!success) {
       return new Response(
-        "You've used up all your credits. Enter your own Together API Key to generate more logos.",
+        "You've used up all your credits. Purchase Pixio to generate more logos.",
         {
           status: 429,
           headers: { "Content-Type": "text/plain" },
