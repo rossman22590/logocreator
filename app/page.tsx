@@ -53,12 +53,12 @@ const backgroundColors = [
 ];
 
 export default function Page() {
-  const [userAPIKey, setUserAPIKey] = useState(() => {
-    if (typeof window !== "undefined") {
-      return localStorage.getItem("userAPIKey") || "";
-    }
-    return "";
-  });
+  // const [userAPIKey, setUserAPIKey] = useState(() => {
+  //   if (typeof window !== "undefined") {
+  //     return localStorage.getItem("userAPIKey") || "";
+  //   }
+  //   return "";
+  // });
   const [companyName, setCompanyName] = useState("");
   // const [selectedLayout, setSelectedLayout] = useState(layouts[0].name);
   const [selectedStyle, setSelectedStyle] = useState(logoStyles[0].name);
@@ -86,7 +86,7 @@ export default function Page() {
     const res = await fetch("/api/generate-logo", {
       method: "POST",
       body: JSON.stringify({
-        userAPIKey,
+        // userAPIKey,
         companyName,
         // selectedLayout,
         selectedStyle,
