@@ -13,14 +13,14 @@ export default function Header({ className }: { className: string }) {
   const { user } = useUser();
 
   return (
-    <header className={`relative w-full ${className}`}>
+<header className={`relative w-full ${className}`}>
       <div className="flex items-center justify-between bg-[#343434] px-4 py-2 md:mt-4">
         {/* Logo - left on mobile, centered on larger screens */}
         <div className="flex flex-grow justify-start xl:justify-center">
-          <Link href="https://dub.sh/together-ai" className="flex items-center">
+          <Link href="https://pixio.myapps.ai" className="flex items-center">
             <Image
-              src="together-ai-logo1.svg"
-              alt="together.ai"
+              src="https://img.mytsi.org/i/vYwa905.png"
+              alt="Pixio Logo"
               width={400}
               height={120}
               className="w-[220px] md:w-[330px] lg:w-[390px]"

@@ -139,7 +139,7 @@ export default function Page() {
               <div className="flex-grow overflow-y-auto">
                 <div className="px-8 pb-0 pt-4 md:px-6 md:pt-6">
                   {/* API Key Section */}
-                  <div className="mb-6">
+                  {/* <div className="mb-6">
                     <label
                       htmlFor="api-key"
                       className="mb-2 block text-xs font-bold uppercase text-[#F3F3F3]"
@@ -155,7 +155,7 @@ export default function Page() {
                       placeholder="API Key"
                       type="password"
                     />
-                  </div>
+                  </div> */}
                   <div className="-mx-6 mb-6 h-px w-[calc(100%+48px)] bg-[#343434]"></div>
                   <div className="mb-6">
                     <label
